@@ -7,7 +7,7 @@ public class Main{
         System.out.println(NameFormatter.format("Mojo", "Jojo"));
 
         //Test all fields
-        System.out.println(NameFormatter.format("Mr.", "Lebron", "Raymone", "James", "Sr"));
+        System.out.println(NameFormatter.format(null, "Lebron", "Raymone", "James", "Sr"));
 
         //Test different fullnames
         //Prefix and Suffix

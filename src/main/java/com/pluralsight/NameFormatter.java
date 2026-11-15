@@ -76,6 +76,18 @@ public class NameFormatter {
                     suffix);
         }
 
+        if(!hasSuffix && hasPrefix) {
+            firstName = tokens[1];
+            middleName = tokens[2];
+            lastName = tokens[3];
+
+            formatted = String.format("%s, %s %s %s",
+                    lastName,
+                    prefix,
+                    firstName,
+                    middleName);
+        }
+
         if (len == 3) {
             firstName = tokens[0];
             middleName = tokens[1];
